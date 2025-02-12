@@ -1,0 +1,147 @@
+/* ===========================
+   Global Styles
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* ===========================
+   Container
+=========================== */
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+.navbar {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   Poll Card
+=========================== */
+.poll-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.poll-card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   Vote Buttons
+=========================== */
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.vote-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.vote-btn:hover {
+  background: #2980b9;
+}
+
+/* ===========================
+   Results Section
+=========================== */
+.results {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result-bar {
+  width: 100%;
+  height: 20px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background: #27ae60;
+  transition: width 0.5s ease-in-out;
+}
+
+.results p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* ===========================
+   Reset Button
+=========================== */
+.reset-btn {
+  margin-top: 20px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #c0392b;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+@media (max-width: 480px) {
+  .vote-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .reset-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
